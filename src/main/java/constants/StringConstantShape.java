@@ -1,4 +1,4 @@
-package Constants;
+package constants;
 
 public class StringConstantShape {
     public static final String SHAPE = "Shape - ";

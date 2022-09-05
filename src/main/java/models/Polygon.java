@@ -1,6 +1,6 @@
 package models;
 
-import Constants.StringConstantShape;
+import constants.StringConstantShape;
 
 public class Polygon extends Shape {
     public Polygon(String name) {

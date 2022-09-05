@@ -1,6 +1,6 @@
 package models;
 
-import Constants.StringConstantShape;
+import constants.StringConstantShape;
 
 public abstract class Shape {
 
