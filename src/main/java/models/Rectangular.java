@@ -1,15 +1,16 @@
 package models;
 
-import constants.StringConstantShape;
-
 public class Rectangular extends Shape{
+
+    private static final String TYPE_OF_SHAPE = "Rectangular - ";
 
     public Rectangular(String name) {
         super(name);
     }
 
     @Override
-    public void print() {
-        System.out.println(StringConstantShape.RECTANGULAR+super.name);
+    protected String getTypeOfShape() {
+        return TYPE_OF_SHAPE;
     }
+
 }

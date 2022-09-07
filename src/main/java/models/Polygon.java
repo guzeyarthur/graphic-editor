@@ -1,14 +1,16 @@
 package models;
 
-import constants.StringConstantShape;
-
 public class Polygon extends Shape {
+
+    private static final String TYPE_OF_SHAPE = "Polygon - ";
+
     public Polygon(String name) {
         super(name);
     }
 
     @Override
-    public void print() {
-        System.out.println(StringConstantShape.POLYGON+super.name);
+    protected String getTypeOfShape() {
+        return TYPE_OF_SHAPE;
     }
+
 }

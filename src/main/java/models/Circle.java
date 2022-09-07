@@ -1,15 +1,17 @@
 package models;
 
-import constants.StringConstantShape;
-
 public class Circle extends Shape{
+
+    private static final String TYPE_OF_SHAPE = "Circle - ";
 
     public Circle(String name) {
         super(name);
     }
 
     @Override
-    public void print() {
-        System.out.println(StringConstantShape.CIRCLE+super.name);
+    protected String getTypeOfShape() {
+        return TYPE_OF_SHAPE;
     }
+
+
 }

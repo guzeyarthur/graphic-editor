@@ -1,14 +1,16 @@
 package models;
 
-import constants.StringConstantShape;
-
 public class Quad extends Shape{
+
+    private static final String TYPE_OF_SHAPE = "Quad - ";
+
     public Quad(String name) {
         super(name);
     }
 
     @Override
-    public void print() {
-        System.out.println(StringConstantShape.QUAD+super.name);
+    protected String getTypeOfShape() {
+        return TYPE_OF_SHAPE;
     }
+
 }

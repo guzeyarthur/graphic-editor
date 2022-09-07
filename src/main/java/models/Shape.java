@@ -1,7 +1,5 @@
 package models;
 
-import constants.StringConstantShape;
-
 public abstract class Shape {
 
     protected String name;
@@ -10,7 +8,9 @@ public abstract class Shape {
         this.name = name;
     }
 
-    public void print() {
-        System.out.println(StringConstantShape.SHAPE+name);
+    abstract protected String getTypeOfShape();
+
+    public String print() {
+        return this.getTypeOfShape() + this.name;
     }
 }
